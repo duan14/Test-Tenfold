@@ -1,10 +1,10 @@
 body {
 	width: 100%;
     height: 100%;
-    background-image: url('https://github.com/duan14/image-library/blob/image-upload/Layout_1.png?raw=true');
+    /*background-image: url('https://github.com/duan14/image-library/blob/image-upload/Layout_1.png?raw=true');*/
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid red;
+    
 }
 
 div.popup {
@@ -141,6 +141,7 @@ margin-left:50px;
 	width:155px;
 }
 
+
 .green_dot img{
 	width:10px;
 	height:10px;
@@ -198,7 +199,7 @@ div.middle{
 }
 
 .title{
-	font-family: 'Titillium Web', sans-serif;
+	font-family:'Titillium Web', sans-serif;
 	font-weight:300;
 	font-size:14px;
 	color:#666666;
@@ -206,7 +207,7 @@ div.middle{
 }
 
 .social{
-	font-family: 'Titillium Web', sans-serif;
+	font-family:'Titillium Web', sans-serif;
 	font-weight:300;
 	font-size:14px;
 	color:#AAAAAA;
@@ -217,6 +218,90 @@ div.middle{
 	text-decoration:underline;
 }
 
+
+.m_row2{
+	margin-top:-10px;
+	margin-left: 455px;
+}
+
+.call_history{
+	font-family:'Titillium Web', sans-serif;
+	font-weight:300;
+	font-size:14px;
+	color:#666666;
+	text-align:left;	
+}
+
+.drop_down{
+	margin-left:3px;
+}
+
+.drop_down img{
+	width:9px;
+	height:6px;
+}
+
+.lower_out_call{
+	margin-left:125px;
+	background:#cccccc;
+	border-radius:4px;
+	width:127px;
+	height:20px;
+	padding-top:2px;
+}
+
+.clock_icon{
+	margin-left:18px;
+	margin-right:3px;
+	}
+
+.clock_icon img{
+	width:15px;
+	height:15px;
+	}
+
+.lower_call_history{
+	font-family:'Titillium Web', sans-serif;
+	font-weight:300;
+	font-size:14px;
+	color:#666666;
+	text-align:left;
+	margin-left:-108px;
+}
+
+.calendar_icon img{
+	width:18px;
+	height:18px;
+	margin-left:25px;
+	margin-bottom:-3px;
+}
+
+.note_icon img{
+	width:19px;
+	height:20px;
+	margin-left:13px;
+	margin-bottom:-6px;
+}
+
+.blue_udline{
+	font-family:TitilliumWeb-Light;
+	font-size:14px;
+	color:#00a1e0;
+	text-align:right;
+	text-decoration:underline;
+}
+
+.calendar_block{
+	margin-left:155px;
+}
+
+.note_block{
+	margin-left:20px;
+	margin-right:10px;
+}
+
+
+/***middle portion css END***/
 
 div.more{
 	position:absolute;
@@ -232,8 +317,9 @@ div.more{
 .showmore{
 	position:absolute;
 	margin-top:5px;
-	margin-left:30px;
-	font-family:tahoma;
+	margin-left:25px;
+	padding-top:3px;
+	font-family:HelveticaNeue;
 	font-size:12px;
 	color:#666666;
 	line-height:13px;
