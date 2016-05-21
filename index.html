@@ -2,101 +2,188 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title>Popup</title>
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
-<link href="css/styles.css" rel="stylesheet" type="text/css" />
 
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+<link href="css/stles.css" rel="stylesheet" type="text/css" />
+
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,200' rel='stylesheet' type='text/css'>
+
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+
 
 </head>
 
-<body>
+<body onload="startTime()">
 
 <container>
 <div class="popup">
-
-<div class="photo">
-    <img class="portrait"">
-    </div>
     
+    <div class="circle">
+        <div class="portrait""></div>
+        <div class="call_icon"></div>
+    </div>
+
 <!---------top grey box START--------->
 	<div class="top">
-    
-    	
-    	<div class="top_row1">
-        	<div class="col-md-6">1
-            </div>
-            <div class="col-md-6">2
-            </div>
-        </div>
-        
-        <div class="top_row2">
-        	<div class="col-md-4">1
-            </div>
-            <div class="col-md-4">2
-            </div>
-            <div class="col-md-4">2
-            </div>
-        </div>
+<!-------------row 1 START---------------->  
+    	<table class="t_row1">
+        <tr>
+        	<th>
+            	<div class="logo"><img src="https://github.com/duan14/image-library/blob/image-upload/logo.png?raw=true" alt="Tenfold"></div>
+            </th>
+            <td>
+            	<div class="close_icon">
+                	<img src="https://github.com/duan14/image-library/blob/image-upload/close-icon.png?raw=true" alt="close" style="height:16px; width:16px;float:right;">
+                </div>
+            </td>
+        </tr>
+        </table>
+<!-------------row 1 END---------------->  
+ 
+<!-------------row 2 START---------------->        
+        <table class="t_row2">
+        <tr>
+        	<th>
+            	<div class="back"><img src="https://github.com/duan14/image-library/blob/image-upload/back%20icon.png?raw=true" alt="back" style="width:40px; height: 40px;"></div>
+            </th>
+            <td>
+            	<div class="history">
+            	<span>CALLS HISTORY</span>
+            	</div>
+            </td>
             
-         <div class="top_row3">
-        	<div class="col-md-6">1
-            </div>
-            <div class="col-md-6">2
-            </div>
-        </div>
+            <td>
+            	<div class="in_out_call">
+                	<table>
+                    <tr>
+                    	<th>
+                        	<div class="in_call" alt="In Call"><span class="call_text">IN CALL</span></div>
+                        </th>
+                    </tr>
+                    <tr>
+                    	<th>
+                        	<div class="out_call" alt="Outbound Call"><span class="call_text">OUTBOUND CALL</span></div>
+                        </th>
+                    </tr>
+                   	</table>
+                </div>
+            </td>
+            
+            <td>
+            	<div class="time">
+                	<div id="txt"></div>
+                </div>
+            </td>
+            
+            <td>
+            	<div class="phone_icon">
+                	<img src="https://github.com/duan14/image-library/blob/image-upload/phone%20icon.png?raw=true"  alt="Phone Icon">
+                </div>
+            </td>
+            
+        </tr>
+     
         
-        </div>
+        </table>
+  <!--------------row 2 END---------------->    
+  
+<!--------------row 3 START---------------->
+
+		<table class="t_row3">
+        	<tr>
+            	<th>
+                	<div class="green_dot">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/0ED85CF6-9D3A-4494-B502-4130D0300523@3x.png?raw=true" alt="Green Dot">
+                    </div>
+                </th>
+                
+                <td>
+            		<div class="name">
+            			<span>Shirley Thomas</span>
+            		</div>
+            	</td>
+                
+                <td>
+            		<div class="phone_number">
+            			<span>+1 (234) 123 123</span>
+            		</div>
+            	</td>
+            
+            </tr>
+        </table>
+        
+ <!--------------row 3 END---------------->
+      
     </div>
  <!---------top grey box END--------->
  
  
+ 
+ 
  <!---------middle white box START--------->
 	<div class="middle">
-    	<div class="middle_row1">
-        	<div class="col-md-4">4
-            </div>
-            <div class="col-md-8">8
-            </div>
-        </div>
-        
-        <div class="middle_row2">
-        	<div class="col-md-12">12
-            </div>
-        </div>
-            
-         <div class="middle_row3">
-        	<div class="col-md-8">8
-            </div>
-            <div class="col-md-2">2
-            </div>
-            <div class="col-md-2">2
-            </div>
-        </div>
-        
-        <div class="middle_row4">
-        	<div class="col-md-8">8
-            </div>
-            <div class="col-md-2">2
-            </div>
-            <div class="col-md-2">2
-            </div>
-        </div>
-        
-        </div>
+    	
+<!--------------row 1 START---------------->  
+		<table class="m_row1">
+        	<tr>
+            	<th>
+                	<div class="menu_icon">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/652D0A99-6A23-489B-A946-E885C490AD4E@3x.png?raw=true" alt="menu icon">
+                    </div>
+                </th>
+                
+                <td>
+                	<div class="detail">
+                	<table>
+                    
+                    	<tr>
+                        	<div>
+                            	<span class="title">Marketing Executive, Inform Group Pty Ltd, Philippines, Cosmetics</span>
+                            </div>
+                        </tr>
+                        
+                        <tr>
+                        	<div>
+                            	<span class="social"><span class="social_udline">Linkedin</span>, <span class="social_udline">Facebook</span>, <span class="social_udline">Twitter</span>  <span class="social_udline">+ Add Field</span></span>
+                            </div>
+                        </tr>
+                        
+                    </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+ 
+<!--------------row 1 END---------------->
+  
+       
     </div>
  <!---------middle white box END--------->
+ 
+ 
+ 
  
  
      <div class="more">
@@ -114,7 +201,7 @@
         
        
     </div> 
- <!---------b0ttom grey box END--------->   
+ <!---------bottom grey box END--------->   
 
 </div>
 </container>
