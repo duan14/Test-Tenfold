@@ -276,6 +276,8 @@ div.middle{
 	width:72px;
 }
 
+
+
 .calendar_icon img{
 	width:18px;
 	height:18px;
@@ -296,15 +298,18 @@ div.middle{
 	color:#00a1e0;
 	text-align:right;
 	text-decoration:underline;
+	z-index:3;
 }
 
 .calendar_block{
 	margin-left:155px;
+	z-index:2;
 }
 
 .note_block{
 	margin-left:20px;
 	margin-right:10px;
+	z-index:2;
 }
 
 
