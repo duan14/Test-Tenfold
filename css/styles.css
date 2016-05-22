@@ -215,10 +215,13 @@ div.middle{
 	font-size:14px;
 	color:#AAAAAA;
 	text-align:left;
+	text-decoration:none;
+	z-index:3;
 }
 
 .social_udline{
 	text-decoration:underline;
+	z-index:3;
 }
 
 
@@ -233,7 +236,7 @@ div.middle{
 	font-size:14px;
 	color:#666666;
 	text-align:left;	
-	z-index:4;
+	z-index:3;
 }
 
 .drop_down{
