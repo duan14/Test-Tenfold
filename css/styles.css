@@ -1,396 +1,329 @@
-body {
-	width: 100%;
-    height: 100%;
-    background-image: url('https://github.com/duan14/image-library/blob/image-upload/Layout_1.png?raw=true');
-    background-repeat: no-repeat;
-    background-size: cover;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Popup</title>
+
+
+
+
+
+<link href="css/stles.css" rel="stylesheet" type="text/css" />
+<link href="css/hover-min.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,200' rel='stylesheet' type='text/css'>
+
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">     
+  <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+  </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
+  
+  
+
+
+</head>
+
+<body onload="startTime()">
+
+<container>
+<div class="popup">
     
-}
+    <div class="circle">
+        <div class="portrait""><img class="hvr-bob" src="https://github.com/duan14/image-library/blob/image-upload/BE0A9CD0-AB0C-4847-845C-C275DB970DA3@3x.png?raw=true" alt="portrait">
+        </div>
+        <div class="call_icon" class="hvr-wobble-vertical"><img class="hvr-bob" src="https://github.com/duan14/image-library/blob/image-upload/green%20phone%20icon.png?raw=true" alt="call icon">
+        </div>
+    </div>
 
-div.popup {
-	
-	margin-top:15%;
-	margin-left:30%;
-	background:#ffffff;
-	box-shadow:10px 10px 30px 0px rgba(0,0,0,0.20), 0px 0px 0px 7px rgba(0,0,0,0.05);
-	border-radius:5px;
-	width:599px;
-	height:429px;	
-}
+<!---------top grey box START--------->
+	<div class="top">
+<!-------------row 1 START---------------->  
+    	<table class="t_row1">
+        <tr>
+        	<th>
+            	<div class="logo"><img src="https://github.com/duan14/image-library/blob/image-upload/logo.png?raw=true" alt="Tenfold"></div>
+            </th>
+            <td>
+            	<div class="close_icon">
+                	<img class="hvr-bounce-in" src="https://github.com/duan14/image-library/blob/image-upload/close-icon.png?raw=true" alt="close" style="height:16px; width:16px;float:right;">
+                </div>
+            </td>
+        </tr>
+        </table>
+<!-------------row 1 END---------------->  
+ 
+<!-------------row 2 START---------------->        
+        <table class="t_row2">
+        <tr>
+        	<th>
+            	<div class="back"><img class="hvr-shrink" src="https://github.com/duan14/image-library/blob/image-upload/back%20icon.png?raw=true" alt="back" style="width:40px; height: 40px;"></div>
+            </th>
+            <td>
+            	<div class="history">
+            	<span>CALLS HISTORY</span>
+            	</div>
+            </td>
+            
+            <td>
+            	<div class="in_out_call">
+                	<table>
+                    <tr>
+                    	<th>
+                        	<div class="in_call" alt="In Call"><span class="call_text">IN CALL</span></div>
+                        </th>
+                    </tr>
+                    <tr>
+                    	<th>
+                        	<div class="out_call" alt="Outbound Call"><span class="call_text">OUTBOUND CALL</span></div>
+                        </th>
+                    </tr>
+                   	</table>
+                </div>
+            </td>
+            
+            <td>
+            	<div class="time">
+                	<div id="txt"></div>
+                </div>
+            </td>
+            
+            <td>
+            	<div class="phone_icon">
+                	<img class="hvr-sink" src="https://github.com/duan14/image-library/blob/image-upload/phone%20icon.png?raw=true"  alt="Phone Icon">
+                </div>
+            </td>
+            
+        </tr>
+     
+        
+        </table>
+  <!--------------row 2 END---------------->    
+  
+<!--------------row 3 START---------------->
 
+		<table class="t_row3">
+        	<tr>
+            	<th>
+                	<div class="green_dot">
+                    	<img class="hvr-pulse" src="https://github.com/duan14/image-library/blob/image-upload/0ED85CF6-9D3A-4494-B502-4130D0300523@3x.png?raw=true" alt="Green Dot">
+                    </div>
+                </th>
+                
+                <td>
+            		<div class="name">
+            			<span>Shirley Thomas</span>
+            		</div>
+            	</td>
+                
+                <td>
+            		<div class="phone_number">
+            			<span>+1 (234) 123 123</span>
+            		</div>
+            	</td>
+            
+            </tr>
+        </table>
+        
+ <!--------------row 3 END---------------->
+      
+    </div>
+ <!---------top grey box END--------->
+ 
+ 
+ 
+ 
+ <!---------middle white box START--------->
+	<div class="middle">
+    	
+<!--------------row 1 START---------------->  
+		<table class="m_row1">
+        	<tr>
+            	<th>
+                	<div class="menu_icon">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/652D0A99-6A23-489B-A946-E885C490AD4E@3x.png?raw=true" alt="menu icon">
+                    </div>
+                </th>
+                
+                <td>
+                	<div class="detail">
+                	<table>
+                    
+                    	<tr>
+                        	<div>
+                            	<span class="title">Marketing Executive, Inform Group Pty Ltd, Philippines, Cosmetics</span>
+                            </div>
+                        </tr>
+                        
+                        <tr>
+                        	<div>
+                            	<span class="social"><span class="social_udline">Linkedin</span>, <span class="social_udline">Facebook</span>, <span class="social_udline">Twitter</span>  <span class="social_udline">+ Add Field</span></span>
+                            </div>
+                        </tr>
+                        
+                    </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+ 
+<!--------------row 1 END---------------->
 
-.portrait img{
-	
-	background-size:contain;
-	position:absolute;
-	margin-top: 95px;
-    margin-left: 30px;
-	border-radius:100px;
-	width:88px;
-	height:88px;
-	z-index:3;
-}
-
-.circle{
-	margin-top: 95px;
-    margin-left: 5px;
-}
-
-.call_icon img{
-
-	background-size:contain;
-	position:absolute;
-	margin-top: 170px;
-    margin-left: 43px;
-	background-repeat: no-repeat;
-	width:62px;
-	height:103px;
-	z-index:2;
-	
-}
-
-/***top portion css START***/
-
-div.top{
-	position:absolute;
-	margin-top: 0px;
-	background:#f9f9f9;
-	width:599px;
-	height:141px;
-	border-top-right-radius:5px;
-	border-top-left-radius:5px;
-	z-index:2;
-}
-
-.t_row1{
-	margin:9px 11px 0px 11px;
-}
-
-.logo img{
-width:54px; 
-height:10px; 
-float:left;
-}
-.close_icon{
-	margin-left:500px;
-}
-
-.t_row2{
-	margin:-2px 30px 5px 30px;
-}
-
-.history{
-	width:93px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight:200;
-	font-size:14px;
-	color:#666666;
-	float: left;
-	margin-left:8px;
-}
-
-.in_out_call{
-margin-left:50px;
-}
-
-.in_call{
-	background:#00d95a;
-	border-radius:4px;
-	width:59px;
-	height:20px;
-	vertical-align:center;
-	float:right;
-	padding-top:2px;
-}
-
-.call_text{
-	font-family:HelveticaNeue-Bold;
-	font-size:14px;
-	color:#ffffff;
-	letter-spacing:0px;
-	text-align:center;
-}
-
-.out_call {
-	background:#cccccc;
-	border-radius:4px;
-	width:127px;
-	height:20px;
-	padding-top:2px;	
-}
-
-.time {
-	margin-left:7px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight:200;
-	font-size:42px;
-	color:#666666;
-	letter-spacing:-1.75px;
-	line-height:32px;
-	text-align:right;
-}
-
-.phone_icon img{
-	margin-left:8px;
-	width:40px;
-	height:40px;
-	border-radius:100%;
-}
-
-
-.green_dot{
-	width:155px;
-}
-
-
-.green_dot img{
-	width:10px;
-	height:10px;
-	float:right;
-}
-
-.name{
-	font-family: 'Titillium Web', sans-serif;
-	font-weight:200;
-	font-size:22px;
-	color:#666666;
-	text-align:left;
-	width: 172px;
-	height:34px;
-	margin-left:5px;
-}
-
-.phone_number{
-	font-family: 'Titillium Web', sans-serif;
-	font-weight:200;
-	font-size:22px;
-	color:#00a1e0;
-	text-align:right;
-	float: right;
-	margin-left: 70px;
-	text-decoration:underline;
-}
-/***top portion css END***/
+<!---------------row 2 START------------------>
+	<table class="m_row2">
+    	<tr>
+        
+        	<td>
+            	<div class="call_history">
+                	<span>CALLS HISTORY</span>
+                </div>
+            </td>
+            
+            <td>
+            	<div class="drop_down">
+                	<button onclick=""myFunction() class="dropbtn" type="submit">
+                	<img src="https://github.com/duan14/image-library/blob/image-upload/A4A71FB5-9FE7-4AB1-9AC3-E61033DEEE11@3x.png?raw=true" alt="drop down">
+                	</button>
+                </div>
+            </td>
+            
+        </tr>
+    </table>
+<!----------------row 2 END------------------>  
 
 
-/***middle portion css START***/
+<!---------------row 3 START------------------->
+	<table class="m_row3">
+    <tr>
+    	<th>
+        	<table>
+            <div class="out_history">
+            	<tr>
+                	<td>
+                    	<div class="lower_out_call" alt="Outbound Call"><span class="call_text">OUTBOUND CALL</span></div>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	<div class="clock_icon">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/clock%20icon.png?raw=true" alt="clock icon">
+                        </div>
+                    </td>
+                    
+                    <td>
+                    	<div class="lower_call_history">
+                    	<span>4 DAYS AGO</span>
+                        </div>
+                    </td>
+                </tr>
+            </div>
+            </table>
+        </th>
+        
+        <td>
+        <div class="calendar_block">
+        	<table>
+            	<tr>
+                	<td>
+                    <div class="calendar_icon">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/9F0431FD-5337-4724-A1E2-406961C9E54D@3x.png?raw=true" alt="calendar icon">
+                    </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    <div class="calendar_detail blue_udline">
+                    	<span id="p1"><a class="blue_udline" href="http://www.kaiyaoduan.com" target="_blank">1 Follow Up</a></span>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </td>
+        
+        <td>
+        <div class="note_block">
+            <table>
+            	<tr>
+                	
+                	<td>
+                    <div class="note_icon">
+                    	<img src="https://github.com/duan14/image-library/blob/image-upload/B180EFE6-283A-4BD9-AA74-F226540CC9F7@3x.png?raw=true" alt="calendar icon">
+                    
+                    </td>
+                <tr>
+                
+                <tr>
+                	<td>
+                    <div class="note_detail blue_udline">
+                    	<span id="p2"><a class="blue_udline" href="https://www.google.com" target="_blank">3 Notes</a></span>
+                    </div>
+                    </td>
+                </div>
+                </tr>
+            </table>
+        </div>
+        </td>
+    </tr>    
+    </table>
 
-div.middle{
-	position:absolute;
-	margin-top: 141px;
-	width:599px;
-	height:160px;
-}
+<!---------------row 3 END------------------->
+       
+    </div>
+ <!---------middle white box END--------->
+ 
+ 
+ 
+ 
+ 
+     <div class="more">
+     	<p class="showmore">SHOW MORE REGISTERS FROM SHERLEY
+        </p>
+     </div>
+     
+ <!---------bottom grey box START--------->   
+    <div class="bottom">
+    	<div class="notes">
+        	<p class="notes_text">Budget is finally available!  Needs to pull in some other decision makers.  Followup next week. CC sales manager <span class="blue_udline" style="color:#00a1e0; text-decoration:underline;">@robert</span> so he can join.
+            </p> 
+            <div class="hvr-float">
+            <button type="button" onclick="" class="save_button">SAVE</button>
+            </div>
+        </div>
+        
+       
+    </div> 
+ <!---------bottom grey box END--------->   
 
-.m_row1{
-	margin-top:10px;
-}
-
-.menu_icon img{
-	margin-left: 145px;
-    width: 8px;
-    height: 8px;
-    margin-top: -19px;
-}
-
-
-.detail{
-	margin-left: 5px;
-    margin-top: -5px;
-}
-
-.title{
-	font-family:'Titillium Web', sans-serif;
-	font-weight:300;
-	font-size:14px;
-	color:#666666;
-	text-align:left;
-}
-
-.social{
-	font-family:'Titillium Web', sans-serif;
-	font-weight:300;
-	font-size:14px;
-	color:#AAAAAA;
-	text-align:left;
-}
-
-.social_udline{
-	text-decoration:underline;
-}
-
-
-.m_row2{
-	margin-top:-10px;
-	margin-left: 455px;
-}
-
-.call_history{
-	font-family:'Titillium Web', sans-serif;
-	font-weight:300;
-	font-size:14px;
-	color:#666666;
-	text-align:left;	
-}
-
-.drop_down{
-	margin-left:3px;
-}
-
-.drop_down img{
-	width:9px;
-	height:6px;
-}
-
-.dropbtn{
-	border: 0; 
-	background: transparent;
-}
-
-.lower_out_call{
-	margin-left:125px;
-	background:#cccccc;
-	border-radius:4px;
-	width:127px;
-	height:20px;
-	padding-top:2px;
-}
-
-.clock_icon{
-	margin-left:18px;
-	margin-right:3px;
-	}
-
-.clock_icon img{
-	width:15px;
-	height:15px;
-	}
-
-.lower_call_history{
-	font-family:'Titillium Web', sans-serif;
-	font-weight:300;
-	font-size:14px;
-	color:#666666;
-	text-align:left;
-	margin-left:-108px;
-	width:72px;
-}
-
-
-
-.calendar_icon img{
-	width:18px;
-	height:18px;
-	margin-left:25px;
-	margin-bottom:-3px;
-}
-
-.note_icon img{
-	width:19px;
-	height:20px;
-	margin-left:13px;
-	margin-bottom:-6px;
-}
-
-.blue_udline{
-	font-family:TitilliumWeb-Light;
-	font-size:14px;
-	color:#00a1e0;
-	text-align:right;
-	text-decoration:underline;
-	z-index:3;
-}
-
-.calendar_block{
-	margin-left:155px;
-	z-index:2;
-}
-
-.note_block{
-	margin-left:20px;
-	margin-right:10px;
-	z-index:2;
-}
+</div>
+</container>
 
 
-/***middle portion css END***/
-
-div.more{
-	position:absolute;
-	margin-top: 285px ;
-	margin-left:161px;
-	text-align:center;
-	background:#ebeff2;
-	border-radius:100px;
-	width:280px;
-	height:30px;
-}
-
-.showmore{
-	position:absolute;
-	margin-top:5px;
-	margin-left:25px;
-	padding-top:3px;
-	font-family:HelveticaNeue;
-	font-size:12px;
-	color:#666666;
-	line-height:13px;
-	z-index: 2;
-}
-
-
-div.bottom{
-	position:absolute;
-	margin-top:301px;
-	background:#ebeff2;
-	width:599px;
-	height:128px;
-	border-bottom-right-radius:5px;
-	border-bottom-left-radius:5px;
-	z-index:1;
-}
-
-.notes{
-	position:absolute;
-	margin-top: 27px;
-	margin-left:23px;
-	background:#ffffff;
-	box-shadow:0px 0px 0px 1px rgba(0,0,0,0.05);
-	border-radius:4px;
-	width:554px;
-	height:73px;
-	z-index: 2;
-}
-
-.notes_text{
-	position:absolute;
-	margin-top:15px;
-	margin-left:30px;
-	width:424px;
-	font-family: 'Titillium Web', sans-serif;
-	font-size:14px;
-	color:#666666;
-	line-height:22px;
-}
-
-
-.save_button{
-	/***button css***/
-	margin-left:465px;
-	margin-right:10px;
-	margin-top:13px;
-	background:#00a1e0;
-	border-radius:4px;
-	width:75px;
-	height:49px;
-	border:none;
-	
-	/*****SAVE text css*****/
-	font-family:HelveticaNeue-Bold;
-	font-size:14px;
-	color:#ffffff;
-	letter-spacing:0px;
-	text-align: center;
-	vertical-align: middle;
-}
-
+</body>
+</html>
