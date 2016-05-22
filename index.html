@@ -33,7 +33,17 @@ function checkTime(i) {
 </script>
 
 
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">     
+  <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+  </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
+  
+  
 
 
 </head>
@@ -249,7 +259,7 @@ function checkTime(i) {
                 <tr>
                 	<td>
                     <div class="calendar_detail blue_udline">
-                    	<span>1 Follow Up</span>
+                    	<span id="p1"><a class="blue_udline" href="http://www.kaiyaoduan.com">1 Follow Up</a></span>
                     </div>
                     </td>
                 </tr>
@@ -272,7 +282,7 @@ function checkTime(i) {
                 <tr>
                 	<td>
                     <div class="note_detail blue_udline">
-                    	<span>3 Notes</span>
+                    	<span id="p2"><a class="blue_udline" href="https://www.google.com">3 Notes</a></span>
                     </div>
                     </td>
                 </div>
