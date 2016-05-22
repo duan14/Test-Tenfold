@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+	width: 100%;
     height: 100%;
     background-image: url('https://github.com/duan14/image-library/blob/image-upload/Layout_1.png?raw=true');
     background-repeat: no-repeat;
@@ -19,8 +19,8 @@ div.popup {
 }
 
 
-.portrait{
-	background-image: url("https://github.com/duan14/image-library/blob/image-upload/BE0A9CD0-AB0C-4847-845C-C275DB970DA3@3x.png?raw=true"); 
+.portrait img{
+	
 	background-size:contain;
 	position:absolute;
 	margin-top: 95px;
@@ -36,8 +36,8 @@ div.popup {
     margin-left: 5px;
 }
 
-.call_icon{
-	background-image: url("https://github.com/duan14/image-library/blob/image-upload/green%20phone%20icon.png?raw=true");
+.call_icon img{
+
 	background-size:contain;
 	position:absolute;
 	margin-top: 170px;
@@ -388,3 +388,4 @@ div.bottom{
 	text-align: center;
 	vertical-align: middle;
 }
+
